@@ -29,4 +29,10 @@ User.objects.create(username="joydeb")  # Triggers post_save
 end = time.time()
 print("Elapsed time", end - start)
 
+Output :
+
+Signal handler started
+Signal handler finished
+Elapsed time: 5.00 seconds
+
 The thread wait for the signal to finish before print the time taken. So it prove that Django signals run synchronously by default.

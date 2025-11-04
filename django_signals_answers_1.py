@@ -27,6 +27,6 @@ import time
 start = time.time()
 User.objects.create(username="joydeb")  # Triggers post_save
 end = time.time()
-print("Time: taken to create user", end - start)
+print("Elapsed time", end - start)
 
 The thread wait for the signal to finish before print the time taken. So it prove that Django signals run synchronously by default.

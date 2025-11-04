@@ -1,8 +1,8 @@
 #django_signals_answers_1.py
 
-Question : By default are django signals executed synchronously or asynchronously? - the caller waits for signal handler to finish before continuing.
+Question : By default are django signals executed synchronously or asynchronously?
 
-Answer : By default, Django signals are executed synchronously.
+Answer : By default, Django signals are executed synchronously. Caller waits for signal handler to finish before continuing.
 
 Example :
 
